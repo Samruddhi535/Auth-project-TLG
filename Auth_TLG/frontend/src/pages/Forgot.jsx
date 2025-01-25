@@ -94,7 +94,7 @@ const Forgot = () => {
     try {
       // Send the data to the backend API
       const response = await axios.post(
-        "http://localhost:4000/forgot-password",
+        `${process.env.BASE_URL}/forgot-password`,
         formData
       );
 

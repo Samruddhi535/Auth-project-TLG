@@ -495,7 +495,7 @@ const LoginPage = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:4000/signin", {
+      const response = await axios.post(`${process.env.BASE_URL}/signin`, {
         email,
         password,
       });

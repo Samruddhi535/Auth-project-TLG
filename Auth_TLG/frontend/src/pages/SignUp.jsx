@@ -1537,7 +1537,7 @@ const RegisterPage = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:4000/signup", {
+      const response = await axios.post(`${process.env.BASE_URL}/signup`, {
         firstName,
         lastName,
         email,
